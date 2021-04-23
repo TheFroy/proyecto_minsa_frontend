@@ -36,7 +36,7 @@ const getData = async () =>{
                         </div>
                         <Tabla tipo="paciente" data={data}/>
                     </Route>
-                    <Route path="/pacientes/:id">
+                    <Route exact path="/pacientes/:id">
                         <InfoPacientes />
                     </Route>
                 </Router>

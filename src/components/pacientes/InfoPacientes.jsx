@@ -21,7 +21,7 @@ const InfoPacientes = () => {
 
     if(paciente !== null){
         return(
-            <div className="container my-5 p-4 shadow rounded">
+            <div className="container col-10 my-5 p-4 shadow rounded">
                 <h1>Informacion de paciente</h1>
                 <div className="row">
                     <div className="col-md-6 col-sm-12">
@@ -29,6 +29,7 @@ const InfoPacientes = () => {
                         <Input texto="Nombre" type="text" valor={paciente[0].nombre}/>
                         <Input texto="Apellido" type="text" valor={paciente[0].apellido}/>
                         <Input texto="Edad" type="number" valor={paciente[0].edad}/>
+                        <Input texto="Fecha de isopado" type="date" valor={paciente[0].fecha_isopado}/>
                         <Input texto="Telefono" type="text" valor={paciente[0].telefono}/>
                     </div>
                     <div className="col-md-6 col-sm-12">

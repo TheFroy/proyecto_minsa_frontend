@@ -8,7 +8,7 @@ loginHandler.login = async (ced, pwd) => {
     params.append('password', pwd)
 
     try {
-        const res = await axios.post("http://localhost:5000/usuarios/login",params,{
+        const res = await axios.post("http://3.142.70.11:5000/usuarios/login",params,{
             "headers": {
                 "content-type": "application/x-www-form-urlencoded",
             },

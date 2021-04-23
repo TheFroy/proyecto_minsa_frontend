@@ -6,8 +6,8 @@ const Tabla = ({tipo, data}) => {
         <>
         {tipo == 'paciente' ?
                 <>
-                    <div className="container-fluid px-4">
-                            <Table  bordered hover>
+                    <div className="table-responsive-sm container px-4">
+                            <table className="table table-hover">
                                 <thead>
                                     <tr>
                                         <th>Cedula</th>
@@ -32,7 +32,7 @@ const Tabla = ({tipo, data}) => {
                                         )
                                     })}
                                 </tbody>
-                            </Table>
+                            </table>
                     </div>
                 </>
                 :

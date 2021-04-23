@@ -4,7 +4,7 @@ const pacientesHandler = {}
 
 pacientesHandler.getAll = async () => {
     try {
-        const res = await axios.get("http://localhost:5000/pacientes/getall",{
+        const res = await axios.get("http://3.142.70.11:5000/pacientes/getall",{
             "headers": {
                 "content-type": "application/json",
             },
@@ -18,7 +18,7 @@ pacientesHandler.getAll = async () => {
 
 pacientesHandler.getOne = async (id) => {
     try {
-        const res = await axios.get(`http://localhost:5000/pacientes/getone/${id}`,{
+        const res = await axios.get(`http://3.142.70.11:5000/pacientes/getone/${id}`,{
             "headers": {
                 "content-type": "application/json",
             },
